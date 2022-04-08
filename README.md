@@ -9,9 +9,12 @@ It also provides a prediction pipeline, where one can predict the outcome of the
 
 # Documentation
 
-[https://github.com/bio-apps/covid-outcome/wiki/CovidOutcome](https://github.com/bio-apps/covid-outcome/wiki/CovidOutcome)
+What does CovidOutcome do? Check [CovidOutcome wiki](https://github.com/bio-apps/covid-outcome/wiki/CovidOutcome)!
+
+How to use CovidOutcome? Check [our documentation](https://github.com/bio-apps/covid-outcome/wiki/Documentation)!
 
 # Citation
 
 Please kindly cite our papers to support further development:
+
 Nagy A. et al: [COVIDOUTCOME—estimating COVID severity based on mutation signatures in the SARS-CoV-2 genome Database](https://academic.oup.com/database/article-abstract/doi/10.1093/database/baab020/6272506) (2021)
