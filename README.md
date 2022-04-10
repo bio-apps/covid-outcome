@@ -17,9 +17,10 @@ What does CovidOutcome do? Check [CovidOutcome wiki](https://github.com/bio-apps
 How to use CovidOutcome? Check [our documentation](https://github.com/bio-apps/covid-outcome/wiki/Documentation)!
 
 # Installation
+The covidoutcome available as a standalone version as well. 
 
 ## Install using conda
-Clone the repository
+Clone the repository and install the dependencies using the conda package manager.
 
 ```
 git clone https://github.com/bio-apps/covid-outcome.git
@@ -27,7 +28,15 @@ cd covid-outcome
 conda env create -f environment_cov_env.yml
 conda activate cov_env
 ```
-
+The usage:
+```
+usage: covidoutcome.py [-h] [--config_file CONFIG_FILE] [--age data AGE DATA] input output
+ ```
+ Using the example:
+ ```
+ covid-outcome/bin/covidoutcome.py --config covid-outcome/data/PipelineConfig.yml \
+  covid-server-app/data/test_data/samples_for_prediction_viz.fasta ./outcome
+```
 
 # Citation
 
