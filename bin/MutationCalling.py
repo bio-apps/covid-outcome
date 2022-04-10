@@ -466,7 +466,7 @@ def get_annotation_df(df):
 
 def get_protein_annotation_ncbi(annotation_file):
     # annotation_file = join(base_path, 'data/NCBI/NC_045512.2_annot.xlsx')
-    genome_annot = pd.read_excel(annotation_file)
+    genome_annot = pd.read_excel(annotation_file, engine='openpyxl')
 
     genome_annot_proteins_proteins_with_id = genome_annot[genome_annot.protein_id.notnull()][
         ['protein_id', 'product', 'display_name', 'note']]

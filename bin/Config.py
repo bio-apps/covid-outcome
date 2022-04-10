@@ -8,6 +8,10 @@ Copyright 2021 by Regina Kalcsevszki (kalcsevszkiregi@gmail.com), Balázs Ligeti
 """
 
 import os
+from os.path import join
+import pandas as pd
+import json
+import gzip
 import sys
 from sys import exit
 
@@ -43,6 +47,7 @@ class Config():
             self.get_max_file_input_sizes()
             self.get_max_input_char_count()
             self.check_qc_steps()
+            self.load_database_info()
         #except:
         #    print("Config file not found or can not be parsed:", config_path)
         #    exit(2)
@@ -95,5 +100,24 @@ class Config():
         os.makedirs(new_output_folder, exist_ok=True)
 
         # Testing write permission?
+    def load_database_info(self):
+        base_path = self.CONFIG['BasePath']
+        suggestion_db_file = join(base_path, self.CONFIG['Database']['mutation_db_suggestions_file'])
+        mut_suggestion_db = pd.read_csv(suggestion_db_file)
+        mut_suggestion_db['mut_short_lowercase'] = mut_suggestion_db.apply(lambda x: str(x['mut_short']).lower(),
+                                                                           axis=1)
+        self.CONFIG['Database']['mutation_db_suggestions'] = mut_suggestion_db
+        # Loading the mutation mapping information
+        print('Loading the mutation mapping information into the memory!')
+        mutation_name_mapping_file = join(base_path, self.CONFIG['Database']['mutation_db_mapping_file'])
+        with gzip.open(mutation_name_mapping_file, 'rt', encoding='UTF-8') as zipfile:
+            mutation_name_mapping = json.load(zipfile)
+        self.CONFIG['Database']['mutation_name_mapping'] = mutation_name_mapping
+
+        # Loading the mutation annotations
+        print('Loading the current mutation annotation information into the memory!')
+        annotations_db_file = join(base_path, self.CONFIG['Database']['mutation_deduplicated_annotation_file'])
+        mut_annotation_db = pd.read_csv(annotations_db_file, sep='\t')
+        self.CONFIG['Database']['mutation_annotation'] = mut_annotation_db
 
 
