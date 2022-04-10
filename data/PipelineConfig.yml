@@ -1,0 +1,81 @@
+MaxSampleSize: 10000 # The server only process this amount of sequences
+OutputFolders:
+    output_folder: "results/outcomes" # The covid-outcome put the temporaray results here.
+InputQC:
+    SetNewSequenceId: True
+    SampleIDPrefix: "CovID"
+    QCSteps:
+        - check_ids
+        - check_uppercase
+        - check_sequence_length
+        - check_nucleotid_proportions # GC content, nonACTG chars
+        - check_congruence
+    Sequence_length:
+        MinSequenceLength: 5
+        MaxSequenceLength: 35000
+    MinACGTRatio: 0.95
+    GCContent:
+        GCmin: 0
+        GCmax: 100
+    CongruenceQC:
+        CongruenceThreshold: 0.75
+        MummerPath: ""
+    Age_min : 0 # in year
+    Age_max: 120 # in year
+Reference:
+    ReferencePathFromBase: "data/reference_genome/gisaid_hcov-19_2021_06_21_12.fasta"
+    Length: 29891
+    GenomeID: "hCoV-19/Wuhan/WIV04/2019|EPI_ISL_402124|2019-12-30"
+    annotation: 'data/reference_genome/NC_045512.2_annot.xlsx' #It contains the prefered protein names
+MulipleAlignment:
+    MAFFTPath: "mafft"
+    CPU_cores: 100
+MutationCalling:
+    snp_eff_command: 'snpEff'
+    snp_eff_reference_genome_id:  'NC_045512.2'
+    tim_out_sec: 7200
+    add_gisaid_id: False
+MachineLearning:
+    jadbio_executor: 'jadbio' # not part of the gitrepo
+    model_without_age:
+        sample_id: 'Accession ID'
+        model_dir: 'data/ml_models/auto_ml_without_age/auto_ml_ts_all_balanced_statified_20220131'
+        flat_table_template: 'template_mut.csv' #File that contains the template for the analysis. We expect that format for the input. Order matters.
+        model_description: 'Stratified to age groups'
+        feature_mapping_file: 'mutation_mapper.csv'
+        model_file: 'jadbio-1.4.24-model-Cset_1_Cohort.bin'
+        type: 'JadBIO'
+    model_with_age:
+        sample_id: 'Accession ID'
+        model_dir: 'data/ml_models/auto_ml_age/auto_ml_ts_balanced_stratified_20220131'
+        model_file: 'jadbio-1.4.24-model-CAset_1_Cohort.bin'
+        flat_table_template: 'template_age_mut.csv' #File that contains the template for the analysis. We expect that format for the input. Order matters.
+        model_description: 'Age, stratified by time periods'
+        feature_mapping_file: 'mutation_mapper.csv'
+        type: 'JadBIO'
+    deep_model_without_age:
+        sample_id: 'Accession ID'
+        model_dir: 'data/ml_models/deep_models_without_age/20220131_stratified'
+        flat_table_template: 'C.set_1_sample.csv' #File that contains the template for the analysis. We expect that format for the input. Order matters.
+        model_description: 'Stratified to age groups'
+        feature_mapping_file: ''
+        model_file: 'C_model'
+        type: 'CFNN'
+    deep_model_with_age:
+        sample_id: 'Accession ID'
+        model_dir: 'data/ml_models/deep_models_age/20220131_stratified'
+        flat_table_template: 'CA.set_1_sample.csv' #File that contains the template for the analysis. We expect that format for the input. Order matters.
+        model_description: 'Stratified to age groups'
+        feature_mapping_file: ''
+        model_file: 'CA_model'
+        type: 'CAFNN'
+DataSchema:
+    sequence_id: 'sequence_id' # name of the sequence ID attribute
+Database:
+    mutation_db_suggestions_file: data/suggestion_db.csv.gz
+    mutation_db_mapping_file: data/mapping_mutation_names_db.json.gz
+    mutation_suggestions_counts: 10
+    mutation_deduplicated_annotation_file: data/filtered_mutations.tsv.gz
+    use_database: True
+    db_type: 'postgres'
+    db_connection_data: 'DBINFO' # name of the enviremnt variable that holds the information for the connection

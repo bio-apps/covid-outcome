@@ -1,0 +1,4 @@
+user_seq_id,sequence_length,user_fasta_header,sequence_id,check_ids,check_uppercase,check_sequence_length,check_ACTG_proportion,check_GC_content,check_congruence,qc_summary
+COVOUT_42938777-8fa3-4962-9c32-b0ad2c009bb6_0,29781,>COVOUT_42938777-8fa3-4962-9c32-b0ad2c009bb6_0,COVOUT_c32b8b07-62ef-4b0e-a4c1-154f82fca3f1_0,OK,OK,OK,OK,OK,OK,OK
+COVOUT_42938777-8fa3-4962-9c32-b0ad2c009bb6_0,30145,>COVOUT_42938777-8fa3-4962-9c32-b0ad2c009bb6_0,COVOUT_c32b8b07-62ef-4b0e-a4c1-154f82fca3f1_0,OK,OK,OK,OK,OK,OK,OK
+COVOUT_42938777-8fa3-4962-9c32-b0ad2c009bb6_0,28469,>COVOUT_42938777-8fa3-4962-9c32-b0ad2c009bb6_0,COVOUT_c32b8b07-62ef-4b0e-a4c1-154f82fca3f1_0,OK,OK,OK,OK,OK,OK,OK

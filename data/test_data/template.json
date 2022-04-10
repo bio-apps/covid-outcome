@@ -1,0 +1,41 @@
+[
+  {
+    "user_seq_id": "COVOUT_42938777-8fa3-4962-9c32-b0ad2c009bb6_0",
+    "sequence_length": 29781,
+    "user_fasta_header": ">COVOUT_42938777-8fa3-4962-9c32-b0ad2c009bb6_0",
+    "sequence_id": "COVOUT_c32b8b07-62ef-4b0e-a4c1-154f82fca3f1_0",
+    "check_ids": "OK",
+    "check_uppercase": "OK",
+    "check_sequence_length": "OK",
+    "check_ACTG_proportion": "OK",
+    "check_GC_content": "OK",
+    "check_congruence": "OK",
+    "qc_summary": "OK"
+  },
+  {
+    "user_seq_id": "COVOUT_42938777-8fa3-4962-9c32-b0ad2c009bb6_0",
+    "sequence_length": 30145,
+    "user_fasta_header": ">COVOUT_42938777-8fa3-4962-9c32-b0ad2c009bb6_0",
+    "sequence_id": "COVOUT_c32b8b07-62ef-4b0e-a4c1-154f82fca3f1_0",
+    "check_ids": "OK",
+    "check_uppercase": "OK",
+    "check_sequence_length": "OK",
+    "check_ACTG_proportion": "OK",
+    "check_GC_content": "OK",
+    "check_congruence": "OK",
+    "qc_summary": "OK"
+  },
+  {
+    "user_seq_id": "COVOUT_42938777-8fa3-4962-9c32-b0ad2c009bb6_0",
+    "sequence_length": 28469,
+    "user_fasta_header": ">COVOUT_42938777-8fa3-4962-9c32-b0ad2c009bb6_0",
+    "sequence_id": "COVOUT_c32b8b07-62ef-4b0e-a4c1-154f82fca3f1_0",
+    "check_ids": "OK",
+    "check_uppercase": "OK",
+    "check_sequence_length": "OK",
+    "check_ACTG_proportion": "OK",
+    "check_GC_content": "OK",
+    "check_congruence": "OK",
+    "qc_summary": "OK"
+  }
+]
