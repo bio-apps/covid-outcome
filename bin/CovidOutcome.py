@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # -*-coding: utf8 -*-
 
-# Created on 2022
-
 import os
 from os.path import join, isfile, abspath, dirname
 import inspect
@@ -133,7 +131,8 @@ def run_pipeline(input_args):
     :return:
     '''
     print('Start analysis')
-    import CovidOutcome
+    import covid_outcome_lib as CovidOutcome
+
     input_id = str(uuid4())
     CovidOutcome.add_new_session(input_id)
     read_sequence_file(input_args,input_id, CovidOutcome)
