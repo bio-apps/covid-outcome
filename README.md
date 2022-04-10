@@ -7,11 +7,27 @@ The model is based on 67708 SARS-CoV-2 genomes and corresponding patient data fr
 
 It also provides a prediction pipeline, where one can predict the outcome of the disease from a genome sample. The uploaded genome is analyzed and a prediction is made by one of the suitable models based on the user’s choice. Next to the prediction, we also output the found annotated mutations for the sample.
 
+__TOC__
+
+
 # Documentation
 
 What does CovidOutcome do? Check [CovidOutcome wiki](https://github.com/bio-apps/covid-outcome/wiki/CovidOutcome)!
 
 How to use CovidOutcome? Check [our documentation](https://github.com/bio-apps/covid-outcome/wiki/Documentation)!
+
+# Installation
+
+## Install using conda
+Clone the repository
+
+```
+git clone https://github.com/bio-apps/covid-outcome.git
+cd covid-outcome
+conda env create -f environment_cov_env.yml
+conda activate cov_env
+```
+
 
 # Citation
 
