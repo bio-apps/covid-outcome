@@ -14,12 +14,12 @@ __TOC__
 
 What does CovidOutcome do? Check [CovidOutcome wiki](https://github.com/bio-apps/covid-outcome/wiki/CovidOutcome)!
 
-How to use CovidOutcome? Check [our documentation](https://github.com/bio-apps/covid-outcome/wiki/Documentation)!
+How to use CovidOutcome? Check [our description](https://github.com/bio-apps/covid-outcome/wiki/Documentation)!
 
 # Installation
 The covidoutcome available as a standalone version as well. 
 
-## Install using conda
+## Install with conda
 Clone the repository and install the dependencies using the conda package manager.
 
 ```
@@ -28,15 +28,20 @@ cd covid-outcome
 conda env create -f environment_cov_env.yml
 conda activate cov_env
 ```
-The usage:
+Basic usage:
 ```
 usage: covidoutcome.py [-h] [--config_file CONFIG_FILE] [--age data AGE DATA] input output
  ```
+``` input ``` = the covid sequences in fasta format
+``` output ``` = the output directory
+ 
+ 
  Using the example:
  ```
  covid-outcome/bin/covidoutcome.py --config covid-outcome/data/PipelineConfig.yml \
   covid-server-app/data/test_data/samples_for_prediction_viz.fasta ./outcome
 ```
+
 
 # Citation
 
