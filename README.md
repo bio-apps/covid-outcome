@@ -41,5 +41,9 @@ usage: covidoutcome.py [-h] [--config_file CONFIG_FILE] [--age data AGE DATA] in
 # Citation
 
 Please kindly cite our papers to support further development:
+```
+[1]    Nagy, Á., Ligeti, B., Szebeni, J., Pongor, S., & Gyrffy, B. (2021).
+       COVIDOUTCOME—estimating COVID severity based on mutation signatures in 
+       the SARS-CoV-2 genome. Database, 2021. 
+```
 
-Nagy A. et al: [COVIDOUTCOME—estimating COVID severity based on mutation signatures in the SARS-CoV-2 genome Database](https://academic.oup.com/database/article-abstract/doi/10.1093/database/baab020/6272506) (2021)
