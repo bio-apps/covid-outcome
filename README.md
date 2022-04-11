@@ -7,8 +7,6 @@ The model is based on 67708 SARS-CoV-2 genomes and corresponding patient data fr
 
 It also provides a prediction pipeline, where one can predict the outcome of the disease from a genome sample. The uploaded genome is analyzed and a prediction is made by one of the suitable models based on the user’s choice. Next to the prediction, we also output the found annotated mutations for the sample.
 
-__TOC__
-
 
 # Documentation
 
@@ -33,6 +31,7 @@ Basic usage:
 usage: covidoutcome.py [-h] [--config_file CONFIG_FILE] [--age data AGE DATA] input output
  ```
 ``` input ``` = the covid sequences in fasta format
+
 ``` output ``` = the output directory
  
  
