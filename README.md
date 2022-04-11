@@ -30,7 +30,7 @@ conda activate cov_env
 ```
 Basic usage:
 ```
-usage: covidoutcome.py [-h] [--config_file CONFIG_FILE] [--age data AGE DATA] input output
+usage: covidoutcome.py input output
  ```
 ``` input ``` = the covid sequences in fasta format
 
