@@ -17,7 +17,7 @@ What does CovidOutcome do? Check [CovidOutcome wiki](https://github.com/bio-apps
 How to use CovidOutcome? Check [our description](https://github.com/bio-apps/covid-outcome/wiki/Documentation)!
 
 # Installation
-The covidoutcome available as a standalone version as well. 
+The covidoutcome is available as a standalone version as well. 
 
 ## Install with conda
 Clone the repository and install the dependencies using the conda package manager.
@@ -36,7 +36,7 @@ usage: covidoutcome.py input output
 
 ``` output ``` = the output directory
  
- For detailed descrition about the outputs, please see the [documentation](https://github.com/bio-apps/covid-outcome/wiki/Documentation). 
+ For a detailed description of the outputs, please see the [documentation](https://github.com/bio-apps/covid-outcome/wiki/Documentation). 
  
  
  Using the example:
@@ -48,7 +48,7 @@ usage: covidoutcome.py input output
 
 # Citation
 
-Please kindly cite our papers to support further development:
+Please kindly cite our paper to support further development:
 ```
 [1]    Nagy, Á., Ligeti, B., Szebeni, J., Pongor, S., & Gyrffy, B. (2021).
        COVIDOUTCOME—estimating COVID severity based on mutation signatures in 
