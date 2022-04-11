@@ -14,7 +14,7 @@ The model is based on 67708 SARS-CoV-2 genomes and corresponding patient data fr
 
 What does CovidOutcome do? Check [CovidOutcome wiki](https://github.com/bio-apps/covid-outcome/wiki/CovidOutcome)!
 
-How to use CovidOutcome? Check [our description](https://github.com/bio-apps/covid-outcome/wiki/Documentation)!
+How to use CovidOutcome? Check [the documentation](https://github.com/bio-apps/covid-outcome/wiki/Documentation)!
 
 # Installation
 The covidoutcome is available as a standalone version as well. 
