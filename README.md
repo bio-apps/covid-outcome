@@ -36,6 +36,8 @@ usage: covidoutcome.py [-h] [--config_file CONFIG_FILE] [--age data AGE DATA] in
 
 ``` output ``` = the output directory
  
+ For detailed descrition about the outputs, please see the [documentation](https://github.com/bio-apps/covid-outcome/wiki/Documentation). 
+ 
  
  Using the example:
  ```
