@@ -1,11 +1,13 @@
 # Overview
 [CovidOutcome](https://covidoutcome.bio-ml.com) is a SARS-CoV-2 mutation identification pipeline and a corresponding machine learning tool that is capable of predicting the outcome of the disease using the genome information and the age of a given patient.
 
-Our research goal was to apply state-of-the-art machine learning techniques to reveal and predict such possible links between the mutation status and the outcome. 
+Our research goal was to apply state-of-the-art machine learning techniques to reveal and predict such possible links between the mutation status and the outcome. The tools provides the followings:
+  * Applying state-of-the art machine learning techniques, autoML and deep-learning models for predicting the expected clinical outcome with expected accuracy of 0.795 CI: [0.762, 0.831]
+  * Predicting novel-unseen mutation combination effects based on the existing data using ML models
+  * Providing fast and high quality, annotated mutation calling for SARS-COV2 genomes in standard (VCF) format
 
-The model is based on 67708 SARS-CoV-2 genomes and corresponding patient data from the GISAID database. After rigorous data cleaning and preprocessing the machine learning models were trained with not only the single nucleotide substitutions, but mutations affecting UTR regions as well. The training set was further stratified to time-periods and age groups.
+The model is based on 67708 SARS-CoV-2 genomes and corresponding patient data from the GISAID database. After rigorous data cleaning and preprocessing the machine learning models were trained with not only the single nucleotide substitutions, indels but mutations affecting UTR regions as well. The training set was further stratified to time-periods and age groups.
 
-It also provides a prediction pipeline, where one can predict the outcome of the disease from a genome sample. The uploaded genome is analyzed and a prediction is made by one of the suitable models based on the user’s choice. Next to the prediction, we also output the found annotated mutations for the sample.
 
 
 # Documentation
