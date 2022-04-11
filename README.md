@@ -49,9 +49,22 @@ usage: covidoutcome.py input output
 # Citation
 
 Please kindly cite our paper to support further development:
+
+Ádám Nagy, Balázs Ligeti, János Szebeni, Sándor Pongor, Balázs Győrffy, COVIDOUTCOME—estimating COVID severity based on mutation signatures in the SARS-CoV-2 genome, Database, Volume 2021, 2021, baab020, https://doi.org/10.1093/database/baab020
+
 ```
-[1]    Nagy, Á., Ligeti, B., Szebeni, J., Pongor, S., & Györffy, B. (2021).
-       COVIDOUTCOME—estimating COVID severity based on mutation signatures in 
-       the SARS-CoV-2 genome. Database, 2021. 
+@article{10.1093/database/baab020,
+    author = {Nagy, Ádám and Ligeti, Balázs and Szebeni, János and Pongor, Sándor and Győrffy, Balázs},
+    title = "{COVIDOUTCOME—estimating COVID severity based on mutation signatures in the SARS-CoV-2 genome}",
+    journal = {Database},
+    volume = {2021},
+    year = {2021},
+    month = {06},
+    issn = {1758-0463},
+    doi = {10.1093/database/baab020},
+    url = {https://doi.org/10.1093/database/baab020},
+    note = {baab020},
+    eprint = {https://academic.oup.com/database/article-pdf/doi/10.1093/database/baab020/38828465/baab020.pdf},
+}
 ```
 
