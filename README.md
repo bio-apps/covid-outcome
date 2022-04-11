@@ -50,7 +50,7 @@ usage: covidoutcome.py input output
 
 Please kindly cite our paper to support further development:
 ```
-[1]    Nagy, Á., Ligeti, B., Szebeni, J., Pongor, S., & Gyrffy, B. (2021).
+[1]    Nagy, Á., Ligeti, B., Szebeni, J., Pongor, S., & Györffy, B. (2021).
        COVIDOUTCOME—estimating COVID severity based on mutation signatures in 
        the SARS-CoV-2 genome. Database, 2021. 
 ```
