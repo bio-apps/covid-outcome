@@ -1,5 +1,5 @@
 # Overview
-[CovidOutcome](https://covidoutcome.bio-ml.com) is a SARS-CoV-2 mutation identification pipeline and a corresponding machine learning tool that is capable of predicting the outcome of the disease using the genome information and the age of a given patient.
+[CovidOutcome2](https://covidoutcome.bio-ml.com) is a SARS-CoV-2 mutation identification pipeline and a corresponding machine learning tool that is capable of predicting the outcome of the disease using the genome information and the age of a given patient.
 
 Our research goal was to apply state-of-the-art machine learning techniques to reveal and predict such possible links between the mutation status and the outcome. The tool provides the followings:
   * Applying state-of-the art machine learning techniques, autoML and deep-learning models for predicting the expected clinical outcome with expected accuracy of 0.795 CI: [0.762, 0.831]
@@ -12,9 +12,9 @@ The model is based on 67708 SARS-CoV-2 genomes and corresponding patient data fr
 
 # Documentation
 
-What does CovidOutcome do? Check [CovidOutcome wiki](https://github.com/bio-apps/covid-outcome/wiki/CovidOutcome).
+What does CovidOutcome2 do? Check [CovidOutcome wiki](https://github.com/bio-apps/covid-outcome/wiki/CovidOutcome).
 
-How to use CovidOutcome? Check [the documentation](https://github.com/bio-apps/covid-outcome/wiki/Documentation).
+How to use CovidOutcome2? Check [the documentation](https://github.com/bio-apps/covid-outcome/wiki/Documentation).
 
 # Installation
 The covidoutcome is available as a standalone version as well. 
