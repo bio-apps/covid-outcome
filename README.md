@@ -50,11 +50,27 @@ usage: covidoutcome.py input output
 
 Please kindly cite our paper to support further development:
 
+
+[1]    Regina Kalcsevszki, András Horváth, Balázs Győrffy, Sándor Pongor, Balázs Ligeti,
+       CovidOutcome2: a tool for SARS-CoV2 mutation identification and for disease severity prediction,
+       bioRxiv 2022.07.01.496571; doi: https://doi.org/10.1101/2022.07.01.496571
+       
 ```
-[1]    Ádám Nagy, Balázs Ligeti, János Szebeni, Sándor Pongor, Balázs Győrffy, COVIDOUTCOME—estimating 
+@article {Kalcsevszki2022.07.01.496571,
+    author = {Kalcsevszki, Regina and Horv{\'a}th, Andr{\'a}s and Gyorffy, Bal{\'a}zs and Pongor, S{\'a}ndor and Ligeti, Bal{\'a}zs},
+    title = {CovidOutcome2: a tool for SARS-CoV2 mutation identification and for disease severity prediction},
+    journal = {bioRxiv},
+    year = {2022},
+    doi = {10.1101/2022.07.01.496571},
+    URL = {https://www.biorxiv.org/content/ early/2022/07/01/2022.07.01.496571},
+    eprint = {https://www.biorxiv.org/content/early/2022/07/01/2022.07.01.496571.full.pdf}
+}
+```
+
+[2]    Ádám Nagy, Balázs Ligeti, János Szebeni, Sándor Pongor, Balázs Győrffy, COVIDOUTCOME—estimating 
        COVID severity based on mutation signatures in the SARS-CoV-2 genome, Database, Volume 2021,
        2021, baab020, https://doi.org/10.1093/database/baab020
-```
+
 
 ```
 @article{10.1093/database/baab020,
@@ -71,4 +87,7 @@ Please kindly cite our paper to support further development:
     eprint = {https://academic.oup.com/database/article-pdf/doi/10.1093/database/baab020/38828465/baab020.pdf},
 }
 ```
+
+
+
 
